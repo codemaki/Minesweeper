@@ -44,3 +44,7 @@ Marks(?), Color(흑백 모드), Sound, Best Times(최고 기록/이름 저장) �
 - 빈 칸 확장용 100칸 링버퍼가 큰 판에서 넘칠 수 있던 문제 → 일반 큐로 교체
 
 이스터에그 `XYZZY`도 있습니다: xyzzy 입력 → Shift → 칸 위에 마우스를 올리면 창 왼쪽 위 1픽셀이 지뢰면 검정, 아니면 흰색이 됩니다.
+
+## 라이선스
+
+[MIT](LICENSE). 원본 [ReversingMinesweeper](https://github.com/repnz/ReversingMinesweeper)는 교육 목적의 역공학 프로젝트이며, 이 프로젝트에는 Microsoft의 코드·비트맵·사운드가 포함되어 있지 않습니다.
