@@ -1,6 +1,6 @@
 # MacosMinesweeper
 
-[ReversingMinesweeper](../ReversingMinesweeper)(Windows XP 지뢰찾기 역공학 소스)를 Swift + AppKit으로 옮긴 macOS 네이티브 지뢰찾기입니다.
+[ReversingMinesweeper](https://github.com/repnz/ReversingMinesweeper)(Windows XP 지뢰찾기 역공학 소스)를 Swift + AppKit으로 옮긴 macOS 네이티브 지뢰찾기입니다.
 
 ## 빌드 & 실행
 
