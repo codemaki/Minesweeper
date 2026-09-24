@@ -2,6 +2,10 @@
 
 [ReversingMinesweeper](https://github.com/repnz/ReversingMinesweeper)(Windows XP 지뢰찾기 역공학 소스)를 Swift + AppKit으로 옮긴 macOS 네이티브 지뢰찾기입니다.
 
+## 설치
+
+[Releases](https://github.com/codemaki/Minesweeper/releases/latest)에서 `Minesweeper-<버전>.dmg`를 받아 열고, `Minesweeper.app`을 Applications 폴더로 끌어다 놓으면 됩니다. Apple 공증을 받은 앱이라 경고 없이 실행됩니다. macOS 13 이상, Apple Silicon / Intel.
+
 ## 빌드 & 실행
 
 ```sh
@@ -10,7 +14,21 @@ swift run                      # 바로 실행
 open build/Minesweeper.app
 ```
 
-Xcode에서는 `Package.swift`를 열면 됩니다. macOS 13 이상.
+Xcode에서는 `Package.swift`를 열면 됩니다.
+
+`build-app.sh`는 키체인에 "Developer ID Application" 인증서가 있으면 그것으로 서명(Hardened Runtime)하고, 없으면 ad-hoc 서명합니다.
+
+### 공증된 DMG 만들기
+
+```sh
+# 최초 1회: 공증용 자격 증명을 키체인에 저장
+xcrun notarytool store-credentials minesweeper-notary \
+    --key AuthKey_XXXX.p8 --key-id XXXX --issuer <Issuer ID>
+
+VERSION=1.0.1 ./Scripts/make-dmg.sh   # 빌드 → DMG → 서명 → 공증 → staple → 검증
+```
+
+결과물은 `build/Minesweeper-<버전>.dmg`입니다. 프로필 이름은 `NOTARY_PROFILE`, 서명 인증서는 `SIGN_IDENTITY`, Bundle ID는 `BUNDLE_ID` 환경 변수로 바꿀 수 있습니다.
 
 ## 조작
 
