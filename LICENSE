@@ -19,12 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-This project is a port based on ReversingMinesweeper
-(https://github.com/repnz/ReversingMinesweeper), a reconstruction of the
-Windows XP Minesweeper source made for educational purposes. It contains no
-Microsoft code, bitmaps or sounds: all graphics and sounds are generated in
-code. "Minesweeper" and "Windows" are trademarks of Microsoft Corporation;
-this project is not affiliated with or endorsed by Microsoft.

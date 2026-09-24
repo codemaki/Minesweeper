@@ -47,4 +47,4 @@ Marks(?), Color(흑백 모드), Sound, Best Times(최고 기록/이름 저장) �
 
 ## 라이선스
 
-[MIT](LICENSE). 원본 [ReversingMinesweeper](https://github.com/repnz/ReversingMinesweeper)는 교육 목적의 역공학 프로젝트이며, 이 프로젝트에는 Microsoft의 코드·비트맵·사운드가 포함되어 있지 않습니다.
+[MIT](LICENSE). 원본 [ReversingMinesweeper](https://github.com/repnz/ReversingMinesweeper)는 교육 목적의 역공학 프로젝트이며, 이 프로젝트에는 Microsoft의 코드·비트맵·사운드가 포함되어 있지 않습니다(그래픽과 사운드는 모두 코드로 생성). "Minesweeper"와 "Windows"는 Microsoft Corporation의 상표이며, 이 프로젝트는 Microsoft와 관련이 없습니다.
